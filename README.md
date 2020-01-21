@@ -96,7 +96,7 @@ haciendose cada vez más fino.
 - Tiene 8 puntos de vida.
 - Al ser golpeado debe emitir el sonido "au"
 - Cuando le queden 3 puntos de vida entrará en enrage y saltará cada 1.5 segundos. Esto se indicará cambiando su color a un tono rojizo parpadeante.
-- Cuando le quede un punto de vida debe emitir el sonido "madafakaaaaaaa"
+- Cuando entre en enrage debe emitir el sonido "madafakaaaaaaa"
 - Al perder todos los puntos de vida debe emitir el sonido "noooo"
 
 ### CU4. GUI
