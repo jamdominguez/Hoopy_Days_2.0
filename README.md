@@ -19,7 +19,7 @@ Hoopy_Days is a platforms game. The 2.0 version change sprites and add behaviour
 
 ## Introduccion
 El juego constará de una fase de plataformas con jefe final.
-La fase uno consistirá en un mapa de plataformas con enemigos.
+La fase uno será mapa de plataformas con enemigos.
 El personaje principal deberá evitar/acabar con los enemigos hasta llegar
 al jefe final y derrotarlo para superar la fase. Ademas de soltear
 las plataformas de la fase.
@@ -34,7 +34,7 @@ el diseñador de niveles. Será una cloaca donde las tuberías (al estilo Super 
 - Las plataformas serán fijas, no móviles.
 - Habrá elmentos hostiles como pinchos y fuego.
 - Habrá items de recuperación de cargas de golpear (paquete de rollos de papel)
-- Habrá un límite de tiempo en superarlo de 99 segundos
+- Habrá un límite de tiempo en superarlo de 99 segundos. Si se acaba el jugador pierde una vida y empieza desde el principio.
 - Los enemigos estarán en sitios específicos y serán un número determinado 
 por el diseñador de niveles
 - Habrá dos tipos de enemigos:
@@ -60,6 +60,7 @@ Cada vez que coja un item de recuperación, recuperará todas las cargas.
 Cada vez que golpee y pierda una carga también se deberá reflejar graficamente,
 haciendose cada vez más fino.
 - Al recuperar carga de ataque debe emitir un sonido "ouh yeah mama"
+- El sprite mostrado debe ser acorde a la cantidad de cargas de ataque que le queden.
 
 ### CU3. Enemigos
 ### CU3.1. Enemigos Generico
@@ -70,7 +71,7 @@ haciendose cada vez más fino.
 - Los enemigos al atacar pueden dañar al jugador y al tocarlo también. Por defecto     al tocarlo le quitan 1 punto de vida y al dañarlo con un ataque según estén definidos.  
 ### CU3.2. Enemigo - Germen
 - Sprite de Germen (bola morada con pinchos al estidlo del pokemon kofkaf o como se llame)
-- Enemigo en movimiento botando de izquierda a derecha por la plataforma sin llegar a caerse.
+- Enemigo en movimiento botando de izquierda a derecha en bucle por la plataforma sin llegar a caerse.
 - Al botar debe emitir el sonido "boing"
 - Si toca al jugador le quita 1 punto de vida.
 - Tiene un punto de vida.
@@ -78,7 +79,7 @@ haciendose cada vez más fino.
 
 ### CU3.3. Enemigo - Trasero Volador
 - Sprite de Trasero Volador (trasero con pelos que lanza ventosidades verdes)
-- Enemigo en movimiento horizontal de izquierda a derecha por la plataforma sin llegar a caerse
+- Enemigo en movimiento horizontal de izquierda a derecha en bucle por la plataforma sin llegar a caerse
 - Si toca al jugador le quita 1 punto de vida
 - Lanza una ventosidad cuando en su visión entra el jugador, con un timer de 2 segundos. La ventosidad quita 1 punto de vida.
 - Al lanzar la ventosidad debe emitir el sonido "prr" de ventosidad reverberante
@@ -87,7 +88,7 @@ haciendose cada vez más fino.
 
 ### CU3.4. Enemigo - Mr Mojón
 - Sprite de Mr Mojón (un mojón gigante como el de wassap)
-- Enemigo en movimiento botando de izquierda derecha de manera lenta, cada 3 segundos da un salto.
+- Enemigo en movimiento botando de izquierda derecha de manera lenta en bucle, cada 3 segundos da un salto.
 - Al botar debe eimitr el sonido "chof"
 - Cada vez que toca el suelo deja una mancha. Estas manchas si tocan al jugador lo dañan 1 punto.
     Se pueden eliminar si el jugador las golpea.
@@ -106,6 +107,6 @@ cambiando su color a un tono rojizo parpadeante.
 
 ### CU5. Música
 - El tema principal será decidido por el diseñador
-- En el jefe final la música cambiando
+- En el jefe final la música cambia
 - Cuando el jefe final entra en enrage se escucha la música de psicosis a la vez
-- Cuando quedan 20seg en el contador la música se hacelera un 50%
+- Cuando quedan 20 segundos en el contador la música se hacelera un 50%
